@@ -1,0 +1,1842 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(../font/Oswald-Bold.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(../font/Oswald-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Unb';
+    src: url(../font/Unbounded-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Unb';
+    src: url(../font/Unbounded-SemiBold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Unb';
+    src: url(../font/Unbounded-Medium.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Unb';
+    src: url(../font/Unbounded-Regular.ttf);
+    font-weight: 500;
+}
+
+
+body {
+    font-family: 'Unb';
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #164B56;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Oswald';
+    font-weight: 900;
+    font-size: 64px;
+    color: #ffffff;
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 span {
+    color: #FFC24F;
+}
+
+.mx_w {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.ptb {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+
+
+
+.bg_banner {
+
+    background-size: cover;
+    height: 840px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+
+.banner_index {
+    background-image: url(../img/fon_bg/home__pk.png);
+}
+
+
+a {
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header img {
+    height: 102px;
+    width: auto;
+}
+
+.fa-solid.fa-bars {
+    font-size: 30px;
+    display: none;
+}
+
+.fa-solid.fa-user {
+    font-size: 36px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 28px;
+}
+
+nav a:hover {
+    color: #FFC24F;
+}
+
+.banner {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: 200px;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    background: #EB2632;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+
+.popular_tour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular_tour__items {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.popular_tour__card {
+    width: 340px;
+    height: 500px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.txtBox__popular {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.place {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.place h4 {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.name_tour {
+    text-align: center;
+    width: 305px;
+}
+
+.pagination__index {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+
+}
+
+.pagin_btn {
+    width: 30px;
+    height: 30px;
+    background-color: #C1C1C1;
+    border-radius: 90px;
+}
+
+.pagin_btn_active,
+.pagin_btn:hover {
+    height: 30px;
+    width: 90px;
+    background-color: #ffffff;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistics .title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.statistics .title h2 {
+    text-align: left;
+    width: 1180px;
+}
+
+.statistics .title img {
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.stat__items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+
+
+.stat__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.stat__card h3 {
+    font-family: 'Oswald';
+    font-weight: 900;
+    color: #FFC24F;
+    font-size: 96px;
+}
+
+.stat__card p {
+    font-size: 28px;
+    text-align: center;
+}
+
+.stat__card p span {
+    font-weight: 900;
+    font-size: 36px;
+}
+
+
+
+
+.format_items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.format_card {
+    position: relative;
+}
+
+.format__group2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.format_card p {
+    font-size: 32px;
+    font-weight: 700;
+    position: absolute;
+    right: 14px;
+    bottom: 10px;
+}
+
+.format_card_one p {
+    font-size: 36px;
+}
+
+
+
+.group_tour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group_tour .pagination__index {
+    display: none;
+}
+
+.items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding-bottom: 40px;
+
+}
+
+.card:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card .imgBox {
+    position: relative;
+}
+
+.card .imgBox img {
+    border-radius: 20px;
+}
+
+.card__name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: -65px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.card .imgBox .card__name .place img {
+    height: 28px;
+    border-radius: 0;
+}
+
+.card .imgBox .place h4 {
+    font-size: 32px;
+}
+
+.card .imgBox .name_tour {
+    font-size: 24px;
+    width: 359px;
+    padding-bottom: 20px;
+}
+
+.card__name {
+    display: none;
+}
+
+.card__name {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    width: 460px;
+    border-radius: 20px;
+}
+
+.card:hover .card__name {
+    display: flex;
+
+}
+
+.txtBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.txtBox p {
+    font-size: 20px;
+    font-weight: 500;
+    width: 420px;
+    height: 125px;
+    text-align: center;
+}
+
+.txtBox .date {
+    font-size: 24px;
+    color: #FFC24F;
+    font-weight: 600;
+    height: auto;
+    width: auto;
+}
+
+.txtBox .price {
+    font-size: 30px;
+    font-weight: 900;
+    color: #FFC24F;
+    padding-top: 10px;
+    width: auto;
+    height: auto;
+}
+
+.btn__card {
+    font-weight: 500;
+    font-size: 24px;
+    padding: 15px 25px;
+    margin-top: 40px;
+}
+
+
+.otzyv__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.otzyv__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.otzyv__card h5 {
+    font-family: 'Oswald';
+    font-weight: 900;
+    font-size: 44px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #FFC24F;
+}
+
+.otzyv__card p {
+    width: 420px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn__otzyv {
+    background-color: #FFC24F;
+    color: #164B56;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-top: 40px;
+    border: 2px solid #FFC24F;
+}
+
+.btn__otzyv:hover {
+    color: #FFC24F;
+    background-color: transparent;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer hr {
+    width: 100%;
+    border: 2px solid #FFC24F;
+}
+
+footer nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.logo_f {
+    padding-left: 20px;
+    margin-right: 370px;
+}
+
+.footer__txt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+.footer__txt .contact_f {
+    width: 340px;
+    text-align: right;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+    margin-left: 250px;
+}
+
+.footer__txt .contact_f a p {
+    font-weight: 600;
+}
+
+.footer__txt .contact_f .social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.copiright {
+    font-size: 18px;
+    color: #DFDFDF;
+    width: 848px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* о нас */
+
+.banner_about {
+    background: url(../img/fon_bg/about__pk.png);
+}
+
+@media (max-width: 768px) {
+    .banner_about {
+        background: url(../img/fon_bg/about__pl.png);
+    }
+}
+
+.about__info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.txtBox__about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.txtBox__about .txtBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.txtBox__about p {
+    width: 810px;
+    font-size: 28px;
+}
+
+.txtBox__about .img1__about {
+    margin-top: 60px;
+}
+
+.txtBox__about .img2__about2 {
+    display: none;
+}
+
+.about__info .img1__about1 {
+    display: none;
+}
+
+.img2__about {
+    width: 480px;
+    height: 965px;
+}
+
+@media (max-width: 768px) {
+    .txtBox__about .img1__about {
+        display: none;
+    }
+
+    .txtBox__about .img2__about2 {
+        display: block;
+        width: 260px;
+    }
+
+    .about__info .img2__about {
+        display: none;
+    }
+
+    .about__info .img1__about1 {
+        display: block;
+        width: 680px;
+        height: 303px;
+    }
+
+    .about__info {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .txtBox__about {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .txtBox__about p {
+        font-size: 20px;
+        width: 400px;
+    }
+
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.osoben__card {
+    position: relative;
+    z-index: 0;
+    transition: .5s;
+}
+
+.osoben__hover {
+    position: absolute;
+    z-index: 10;
+    top: 49.5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.osoben__hover {
+    display: none;
+}
+
+.osoben__card h4 {
+    font-family: 'Oswald';
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 49.5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+
+    display: none;
+}
+
+.osoben__card:hover h4 {
+    display: block;
+}
+
+.osoben__card:hover .osoben__hover {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .osobennosti {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block {
+        flex-wrap: wrap;
+        width: 512px;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .osoben__card img {
+        width: 200px;
+        height: 274px;
+    }
+
+    .osoben__hover {
+        top: 49%;
+    }
+
+    .osoben__card h4 {
+        font-size: 28px;
+    }
+}
+
+/* каталог */
+.banner_catalog {
+    background: url(../img/fon_bg/katalog__pk.png);
+}
+
+@media (max-width: 768px) {
+    .banner_catalog {
+        background: url(../img/fon_bg/katalog__pl.png);
+    }
+}
+
+.katalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filtr__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 100px 0 80px;
+}
+
+.filtr {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 2px solid #FFC24F;
+    border-radius: 20px;
+    color: #FFC24F;
+}
+
+.filtr__active,
+.filtr:hover,
+.filtr:active,
+.filtr:focus {
+    background-color: #FFC24F;
+    color: #164B56;
+    outline: none;
+}
+
+select:active {
+    outline: none;
+    background-color: #FFC24F;
+    color: #164B56;
+
+}
+
+.pagination__katalog {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .filtr__items {
+        gap: 22px;
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+
+    .filtr {
+        font-size: 18px;
+        padding: 7px 10px;
+        border-radius: 10px;
+    }
+
+    .pagination__katalog {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .pagin_btn_kat {
+        color: #FFC24F;
+        border-radius: 10px;
+        border: 2px solid #FFC24F;
+        padding: 7px 10px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .pagin_btn_kat_active,
+    .pagin_btn_kat:hover {
+        color: #164B56;
+        background-color: #FFC24F;
+    }
+}
+
+/* товар */
+.banner_tovar {
+    background: linear-gradient(rgba(22, 75, 86, 0.6), rgba(22, 75, 86, 0.6)), url(../img/tovar/antarctida__fon.png);
+}
+
+.banner_tovar .banner {
+    bottom: -150px;
+
+}
+
+.banner_tovar h1 {
+    font-family: 'Oswald';
+    font-weight: 900;
+    font-size: 115px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.place__date {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+
+.place__date .place {
+    gap: 15px;
+}
+
+.place__date .place h4 {
+    font-size: 44px;
+}
+
+.place__date .place img {
+    height: 54px;
+}
+
+.place__date p {
+    font-size: 36px;
+    font-weight: 600;
+    color: #FFC24F;
+}
+
+@media (max-width: 768px) {
+    .banner_tovar {
+        background-position: center top;
+    }
+
+    .banner_tovar .banner {
+        bottom: -100px;
+    }
+
+    .banner_tovar h1 {
+        font-size: 64px;
+    }
+
+    .place__date {
+        padding-top: 60px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .place__date .place h4 {
+        font-size: 36px;
+    }
+
+    .place__date .place img {
+        height: 46px;
+        width: auto;
+    }
+
+    .place__date p {
+        font-size: 28px;
+    }
+}
+
+.tovar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tovar__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.tovar__info .txtBox__tovar {
+    width: 802px;
+    font-size: 32px;
+}
+
+.tovar__info .txtBox__tovar .price {
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.tovar__info .txtBox__tovar .price span {
+    color: #FFC24F;
+}
+
+.tovar__info .tovar__two {
+    display: none;
+}
+
+.btn__tovar {
+    margin: 50px auto 0;
+}
+
+@media (max-width: 768px) {
+    .tovar__info {
+        flex-direction: column;
+    }
+
+    .tovar__info .txtBox__tovar {
+        width: 600px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .tovar__info .txtBox__tovar .price {
+        font-size: 32px;
+        margin-top: 40px;
+    }
+
+    .tovar__info img {
+        display: none;
+    }
+
+    .tovar__info .tovar__two {
+        display: block;
+        max-width: 768px;
+    }
+
+    .btn__tovar {
+        margin-top: 60px;
+        padding: 20px 30px;
+        font-size: 28px;
+    }
+}
+
+/* контакты */
+.banner__contact {
+    background: url(../img/fon_bg/contact__pk.png);
+    background-position: center center;
+}
+
+.banner__contact .banner {
+    bottom: -260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.banner__contact h2 {
+    font-weight: 500;
+}
+
+.banner__contact h2 span {
+    font-weight: 900;
+}
+
+.contact__info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.banner__contact .copiright {
+    margin-top: 100px;
+}
+
+.contact__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+    gap: 10px;
+}
+
+.cont__name {
+    font-size: 24px;
+}
+
+.cnt {
+    /* width: auto; */
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.cont__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cont__social .social {
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cont__social .social a img {
+    width: 52px;
+    height: 52px;
+}
+
+@media (max-width: 768px) {
+
+
+    .banner__contact .banner {
+        bottom: -360px;
+    }
+
+    .contact__info {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .contact__card {
+        align-items: center;
+        text-align: center;
+    }
+
+    .cont__name {
+        font-size: 24px;
+    }
+
+    .cnt {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .cont__social {
+        margin-top: 20px;
+    }
+}
+
+/* регистрация / аворизация  */
+.form_login_registration {
+    width: 653px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding-top: 45px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form_login_registration h2 {
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+form input,
+form input::placeholder {
+    font-family: 'Unb';
+    font-weight: 500;
+    font-size: 24px;
+    color: #164B56;
+}
+
+form input {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #164B56;
+}
+
+form a {
+    color: #164B56;
+}
+
+form a span {
+    text-decoration: underline;
+}
+
+.btn_form {
+    width: auto;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #164B56;
+    color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #164B56;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .form_login_registration {
+        width: 480px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        margin-top: 40px;
+    }
+
+    form {
+        gap: 20px;
+        width: 320px;
+    }
+
+    form input,
+    form input::placeholder {
+        font-size: 22px;
+    }
+
+    form a {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .btn_form {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mx_w {
+        max-width: 680px;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .ptb {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .bg_banner {
+        height: 599px;
+        ;
+
+    }
+
+    .banner_index {
+        background-image: url(../img/fon_bg/home__pl.png);
+    }
+
+    header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    header img {
+        height: 67px;
+        width: auto;
+    }
+
+    .fa-solid.fa-bars {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .fa-solid.fa-user {
+        display: none;
+    }
+
+    .banner {
+        bottom: 160px;
+    }
+
+    .btn {
+        font-size: 24px;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+
+    .popular_tour__card:nth-child(3) {
+        display: none;
+    }
+
+    .popular_tour__card:nth-child(2) {
+        display: none;
+    }
+
+    .pagination__index {
+        margin-top: 30px;
+    }
+
+    .pagin_btn {
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+    }
+
+    .pagin_btn_active,
+    .pagin_btn:hover {
+        height: 24px;
+        width: 50px;
+        border-radius: 90px;
+    }
+
+    .statistics .title h2 {
+        width: 550px;
+    }
+
+    .statistics .title img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .stat__items {
+        width: 500px;
+    }
+
+    .stat__card {
+        gap: 5px;
+    }
+
+    .stat__card h3 {
+        font-size: 50px;
+    }
+
+    .stat__card p {
+        width: 170px;
+        font-size: 20px;
+    }
+
+    .stat__card p span {
+        font-size: 28px;
+    }
+
+    .format{
+        align-items: center;
+    }
+    .format_items{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .format_items,
+    .format__group2 {
+        gap: 30px;
+    }
+
+    .format_card img {
+        width: 650px;
+    }
+
+    .format_card p {
+        font-size: 28px;
+    }
+
+    .format_card_one p {
+        font-size: 32PX;
+    }
+
+    .format_card p {
+        right: 20PX;
+    }
+
+
+    .card {
+        width: 330px;
+    }
+
+    .group_tour .card:nth-child(3) {
+        display: none;
+    }
+
+    .card .imgBox img {
+        width: 330px;
+        height: 389px;
+
+    }
+
+    .card .imgBox .card__name .place img {
+        width: 20px;
+    }
+
+    .card .imgBox .name_tour {
+        font-size: 20px;
+        width: 307px;
+    }
+
+    .card__name {
+        width: 330px;
+        bottom: -55px;
+        gap: 0;
+    }
+
+    .txtBox .date {
+        font-size: 20px;
+    }
+
+    .txtBox p {
+        font-size: 18px;
+        width: 300px;
+        height: 154px;
+    }
+
+    .txtBox .price {
+        font-size: 24px;
+        padding-top: 5px;
+    }
+
+    .btn__card {
+        font-size: 18px;
+        padding: 10px 15px;
+        margin-top: 30px;
+    }
+
+    .group_tour .pagination__index {
+        display: flex;
+    }
+
+    .otzyv__card:nth-child(3) {
+        display: none;
+    }
+
+    .otzyv__card {
+        padding: 15px 15px 30px;
+        border-radius: 10px;
+    }
+
+    .otzyv__card img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .otzyv__card p {
+        width: 294px;
+        height: 100px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .otzyv__card h5 {
+        font-size: 28px;
+    }
+
+    .btn__otzyv {
+        padding: 11px 22px;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .footer__txt {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        margin-top: 60px;
+    }
+
+    footer nav {
+        display: flex;
+        font-size: 22px;
+        gap: 20px;
+    }
+
+    .logo_f {
+        display: none;
+    }
+
+    .footer__txt .contact_f {
+        font-size: 22px;
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .social {
+        margin-top: 15px;
+        gap: 30px;
+    }
+
+    .copiright {
+        width: 665px;
+        font-size: 16px;
+        margin-top: 60px;
+    }
+
+    .banner__contact {
+        height: 950px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .mx_w {
+        max-width: 390px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .bg_banner {
+        height: 390px;
+    }
+
+    .banner_index {
+        background-image: url(../img/fon_bg/home__mob.png);
+    }
+
+    header img {
+        height: 53px;
+        width: auto;
+    }
+
+    .fa-solid.fa-bars {
+        display: block;
+        font-size: 28px;
+    }
+
+
+    .banner {
+        bottom: 100px;
+    }
+
+    .btn {
+        font-size: 17px;
+        padding: 7px 10px;
+        border-radius: 10px;
+    }
+
+    .popular_tour__card:nth-child(4) {
+        display: none;
+    }
+
+    .pagination__index {
+        margin-top: 20px;
+    }
+
+   
+
+    .statistics .title h2 {
+        width: 255px;
+    }
+
+    .statistics .title img {
+        width: 90px;
+        height: 90px;
+    }
+    .stat__items {
+        width: 340px;
+        gap: 40px;   
+    }
+    .stat__card h3 {
+        font-size: 36px;
+    }
+    .stat__card p{
+        font-size: 16px;
+        width: 140px;
+    }
+    .stat__card p span {
+        font-size: 22px;
+    }
+    .format{
+        display: flex;flex-direction: column;
+        align-items: center;
+    }
+    .format h2{
+        width: 280px;
+    }
+    .format_items,
+    .format__group2 {
+        gap: 20px;
+    }
+    .format_card img {
+        width: 360px;
+    }
+    .format_card p {
+        font-size: 16px;
+        right: 7px;
+        bottom: 5px;
+    }
+    .format_card_one p {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 300px;
+    }
+    .card .imgBox img {
+        width: 300px;
+        height: 354px;
+    }
+    .card .imgBox .card__name .place img {
+        width: 15px;
+        height: auto;   
+    }
+    .card .imgBox .card__name .place h4{
+        font-size: 24px;
+    }
+    .card .imgBox .name_tour {
+        font-size: 18px;
+        width: 275px;
+    }
+    .card__name {
+        width: 300px;
+        bottom: -47px;
+        gap: 0;
+    }
+    .txtBox{
+        margin-top: 15px;
+        gap: 15px;
+    }
+    .txtBox .date {
+        font-size: 18px;
+    }
+    .txtBox p {
+        font-size: 15px;
+        width: 280px;
+        height: 114px;
+    }
+    .txtBox .price {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    .btn__card {
+        font-size: 18px;
+        padding: 10px 15px;
+        margin-top: 20px;
+    }
+    .otzyv__card:nth-child(1) {
+        display: none;
+    }
+    .otzyv__card {
+        padding: 15px 15px 20px;
+        border-radius: 10px;
+    }
+    .otzyv__card img {
+        width: 280px;
+        height: 280px;
+    }
+    .otzyv__card p {
+        width: 280px;
+        height: 95px;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .otzyv__card h5 {
+        font-size: 22px;
+    }
+    .btn__otzyv {
+        padding: 7px 10px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .footer__txt {
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+        margin-top: 30px;
+    }
+
+    footer nav {
+        display: flex;
+        font-size: 16px;
+        gap: 15px;
+    }
+    .footer__txt .contact_f {
+        font-size: 16px;
+    }
+    .social {
+        margin-top: 15px;
+        gap: 30px;
+    }
+    .copiright {
+        width: 364px;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+    .banner_about {
+        background: url(../img/fon_bg/about__mob.png);
+    }
+    .about__info{
+        align-items: center;
+        gap: 10px;
+    }
+    .txtBox__about{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .txtBox__about .txtBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txtBox__about .img1__about{
+        display: block;
+        width: 390px;
+        height: 180px;
+        margin: 0;
+    }
+    .txtBox__about .img2__about2 {
+        display: none;
+    }
+    .about__info .img2__about{
+        display: block;
+        /* width: 280px; */
+        width: 250px;
+        height: 402px;
+    }
+    .about__info .img1__about1{
+        display: none;
+    }
+    .txtBox__about p {
+        font-size: 16px;
+        width: 330px;
+        text-align: center;
+    }
+    .block {
+        width: 390px;
+        gap: 10px;
+    }
+    .osoben__card{
+        width: 190px;
+    }
+    .osoben__card img {
+        width: 190px;
+        height: 250px;
+    }
+    .osoben__card h4{
+        font-size: 22px;
+    }
+    .banner_catalog {
+        background: url(../img/fon_bg/katalog__mob.png);
+    }
+    .banner_catalog .btn{
+        font-size: 16px;
+    }
+    .tovar{
+        padding-bottom: 0;
+    }
+    .filtr__items {
+        width: 217px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        margin: 50px 0 25px;
+    }
+    .filtr{
+        padding: 4px 8px;
+        font-size: 14px;
+        width: 100px;
+        flex: 1;
+    }
+    .vse{
+        width: auto;
+        text-align: center;
+    }
+    .pagination__katalog {
+        gap: 20px;
+        margin-top: 5px;
+    }
+    .banner_tovar h1 {
+        font-size: 30px;
+    }
+    
+    .place__date {
+        padding-top: 40px;
+    }
+    .place__date .place h4 {
+        font-size: 18px;
+    }
+    
+    .place__date .place img {
+        height: 20px;
+        width: auto;
+    }
+    .place__date .place{
+        gap: 5px;
+    }
+    .place__date p {
+        font-size: 20px;
+    }
+    .banner_tovar .banner {
+        bottom: -20px;
+    }
+    .tovar__info{
+        gap: 30px;
+    }
+    .tovar__info .txtBox__tovar {
+        width: 360px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .tovar__info .txtBox__tovar .price {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    .tovar__info .tovar__two {
+        display: block;
+        max-width: 430px;
+    }
+    .btn__tovar {
+        margin-top: 40px;
+        padding: 7px 10px;
+        font-size: 22px;
+    }
+    .banner__contact {
+        height: 810px;
+    }
+    .banner__contact .banner {
+        bottom: -350px;
+    }
+    .contact__info{
+        gap: 25px;
+    }
+    .banner__contact h2{
+        font-size: 30px;
+    }
+    .contact__card{
+        gap: 8px;
+    }
+    .cont__name {
+        font-size: 20px;
+    }
+    .cnt{
+        font-size: 22px;
+    }
+    .cont__social {
+        margin-top: 25px;
+    }
+    .cont__social .social {
+        gap: 10px;
+    }
+    .cont__social .social a img{
+        width: 40px;
+        height: 40px;
+    }
+    .contact__info .copiright{
+        margin-top: 60px;
+    }
+    .form_login_registration {
+        width: 360px;
+        padding-top: 25px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+    }
+    .form_login_registration h2{
+        font-size: 32px;
+    }
+    form {
+        gap: 15px;
+        width: 320px;
+    }
+    form input,
+    form input::placeholder {
+        font-size: 18px;
+    }
+    form a {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .btn_form {
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+}
