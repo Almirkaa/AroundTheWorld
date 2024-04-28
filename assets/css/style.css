@@ -132,6 +132,7 @@ nav a:hover {
     color: #FFC24F;
 }
 
+
 .banner {
     margin: 0 auto;
     position: absolute;
@@ -1045,7 +1046,7 @@ select:active {
 }
 
 .cont__social .social {
-    
+
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1184,6 +1185,957 @@ form a span {
     }
 }
 
+/* !!!!!!!! */
+/* СДЕЛАТЬ АДАПТИВ ДЛЯ СТРАНИЦ НИЖЕ↓ */
+/* личный кабинет пользователя */
+.user__name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.foto {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.foto img {
+    width: 100%;
+}
+
+.user__foto a {
+    font-size: 24px;
+}
+
+.user__info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 1030px;
+    margin-top: 80px;
+}
+
+.user__info__card {
+
+    width: 420px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+.user__btns {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+
+.cancle {
+    color: #FFC24F;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid #FFC24F;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.btn__user,
+.cancle:hover {
+    padding: 10px 20px;
+    background-color: #FFC24F;
+    color: #164B56;
+    border: 2px solid #FFC24F;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.btn__user:hover {
+    color: #FFC24F;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .user__foto {
+        gap: 20px;
+    }
+
+    .foto {
+        width: 200px;
+        height: 200px;
+    }
+
+    .user__foto a {
+        font-size: 20px;
+    }
+
+    .user__info {
+        width: 680px;
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .user__info__card {
+        width: 300px;
+    }
+
+    .user__info__card p {
+        font-size: 24px;
+    }
+
+    .user__btns {
+        margin-top: 60px;
+        gap: 20px;
+    }
+
+    .btn__user {
+        font-size: 24px;
+        padding: 7px 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .user__foto {
+        gap: 15px;
+    }
+
+    .foto {
+        width: 100px;
+        height: 100px;
+    }
+
+    .user__foto a {
+        font-size: 14px;
+    }
+
+    .user__info {
+        width: 320px;
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .user__info__card {
+        padding: 0 0 10px;
+        width: 320px;
+        text-align: center;
+    }
+
+    .user__info__card p {
+        font-size: 18px;
+    }
+
+    .user__btns {
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    .btn__user {
+        font-size: 20px;
+        padding: 5px 12px;
+    }
+}
+
+.zayavki {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zayavki__items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.zayavki__card {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+
+.zayavki__card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.zayavki__card p {
+    font-size: 28px;
+    text-align: center;
+}
+
+.z_name {
+    width: 425px;
+}
+
+/* .z_country{
+    width: auto;
+}*/
+.z_date {
+    width: 250px;
+    color: #FFC24F;
+}
+
+/*.z_people{
+    width: 100px;
+} */
+.fa-solid.fa-trash {
+    font-size: 32px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+@media (max-width: 768px) {
+    .zayavki__items {
+        gap: 20px;
+    }
+
+    .zayavki__card {
+        padding: 15px 10px;
+    }
+
+    .zayavki__card img {
+        height: 150px;
+        width: auto;
+    }
+
+    .zayavki__card p {
+        font-size: 18px;
+    }
+
+    .z_name {
+        width: 185px;
+    }
+
+    .z_date {
+        width: 105px;
+    }
+
+    .fa-solid.fa-trash {
+        font-size: 28px;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .zayavki__items {
+        gap: 12px;
+    }
+
+    .zayavki__card img {
+        height: 100px;
+        width: auto;
+    }
+
+    .zayavki__card p {
+        font-size: 11px;
+    }
+
+    .z_name {
+        width: 80px;
+    }
+
+    .z_date {
+        width: 64px;
+    }
+
+    .fa-solid.fa-trash {
+        font-size: 20px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .footer__txt {
+        margin-top: 0;
+    }
+}
+
+
+/* страниа оформления заявки */
+.form_order form {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .form_order form {
+        width: 420px;
+        gap: 60px;
+    }
+}
+
+.date_input {
+    width: 100%;
+}
+
+.date_input label {
+    padding-left: 10px;
+    font-size: 20px;
+    color: #FFC24F;
+}
+
+.form_order form input,
+.form_order form input::placeholder {
+    font-family: 'Unb';
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.form_order form input {
+    background-color: transparent;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+.form_order form input:focus {
+    color: #FFC24F;
+    border-bottom: 2px solid #FFC24F;
+}
+
+.form_order form input:hover {
+    border-bottom: 2px solid #FFC24F;
+}
+
+
+
+.form_order .btn__user {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #FFC24F;
+    color: #164B56;
+    border: 2px solid #FFC24F;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.form_order .btn__user:hover {
+    color: #FFC24F;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .form_order form {
+        width: 420px;
+        gap: 60px;
+    }
+
+    .form_order form input,
+    .form_order form input::placeholder {
+        font-size: 24px;
+    }
+
+    .form_order .btn__user {
+        padding: 7px 15px;
+    }
+
+    .date_input label {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .form_order form {
+        width: 320px;
+        gap: 25px;
+    }
+
+    .form_order form input,
+    .form_order form input::placeholder {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .date_input label {
+        font-size: 14px;
+        padding-left: 80px;
+    }
+
+    .form_order .btn__user {
+        padding: 5px 12px;
+    }
+}
+
+/* админ панель */
+body {
+    position: relative;
+    z-index: 0;
+
+}
+
+.adminka header {
+    display: none;
+}
+
+.nav__panel {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 345px;
+
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 8px 0px 25px rgba(0, 0, 0, 0.15);
+}
+
+.nav__panel header {
+    display: flex;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+    background-color: #164B56;
+}
+
+.nav__panel header img {
+    height: 102px;
+}
+
+.admin_navigation {
+    background-color: #FFC24F;
+    color: #333333;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 40px;
+    /* padding-bottom: 100%; */
+
+}
+
+.admin_img_name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.imgBox_admin {
+    width: 77px;
+    height: 77px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.imgBox_admin img {
+    width: 100%;
+}
+
+.txtBox_admin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.txtBox_admin .name {
+    color: #333333;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.admin_navigation nav {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.navBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+
+}
+
+.navBox a {
+    color: #333333;
+}
+
+.nav_active_admin,
+.navBox a:hover,
+.navBox a:focus,
+.navBox a:active {
+    text-decoration: underline;
+    color: #333333;
+}
+
+.osnov__panel {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    padding-left: 370px;
+    padding-bottom: 75px;
+}
+
+.osnov__panel h3 {
+    text-align: center;
+    font-size: 36px;
+    color: #FFC24F;
+    font-weight: 900;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.osnov__panel h4 {
+    font-size: 32px;
+    padding-bottom: 30px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .adminka header {
+        display: flex;
+    }
+
+    .nav__panel header {
+        display: none;
+    }
+
+    .nav__panel {
+        display: none;
+    }
+
+    .osnov__panel {
+        padding-left: 0;
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .osnov__panel h3 {
+        padding: 30px 0;
+    }
+
+    .osnov__panel h4 {
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .osnov__panel {
+        max-width: 390px;
+    }
+
+    .osnov__panel h3 {
+        font-size: 28px;
+        padding: 30px 0 25px;
+    }
+
+    .osnov__panel h4 {
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Админка старница пользователи */
+.users__info__items,
+.users__products__items {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.users__info__card,
+.users__products__card {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.users__info__card:hover {
+    background: rgba(217, 217, 217, 0.2);
+}
+
+.users__info__card a {
+    color: #FFC24F;
+}
+
+.users__info__card a:hover {
+    color: #EB2632;
+}
+
+.users__info__card p,
+.users__products__card p {
+    font-size: 18px;
+}
+
+.user__id {
+    width: 40px;
+    color: #818181;
+}
+
+.users__name {
+    width: 120px;
+}
+
+.user__LName {
+    width: 180px;
+}
+
+.user__email {
+    width: 300px;
+}
+
+.user__tel {
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+
+    .users__info__items,
+    .users__products__items {
+        gap: 15px;
+    }
+
+    .users__info__card,
+    .users__products__card {
+        padding: 15px;
+        gap: 25px;
+    }
+
+    .users__info__card p,
+    .users__products__card p {
+        font-size: 13px;
+    }
+
+    .user__id {
+        width: 25px;
+    }
+
+    .users__name {
+        width: 75px;
+    }
+
+    .user__LName {
+        width: 115px;
+    }
+
+    .user__email {
+        width: 142px;
+    }
+
+    .user__tel {
+        width: 108px;
+    }
+
+    .users__info__card a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .users__info__items,
+    .users__products__items {
+        gap: 10px;
+    }
+
+    .users__info__card,
+    .users__products__card {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .users__info__card p,
+    .users__products__card p {
+        font-size: 8px;
+    }
+
+    .user__id {
+        width: 10px;
+    }
+
+    .users__name {
+        width: 50px;
+    }
+
+    .user__LName {
+        width: 75px;
+    }
+
+    .user__email {
+        width: 90px;
+    }
+
+    .user__tel {
+        width: 71px;
+    }
+
+    .users__info__card a {
+        font-size: 9px;
+    }
+}
+
+/* админка страница ТОвары */
+.prod__img__name {
+    width: 127px;
+}
+
+.prod__img {
+    height: 150px;
+    width: 127px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.prod__img img {
+    width: 100%;
+}
+
+.prod__name {
+    width: 300px;
+    text-align: center;
+}
+
+.prod__country {
+    width: 120px;
+}
+
+.prod__price {
+    width: 120px;
+}
+
+.btn__edit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.users__products__card .fa-solid.fa-trash {
+    position: static;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.users__products__card .fa-solid.fa-trash:hover {
+    color: #FFC24F;
+}
+
+.fa-regular.fa-pen-to-square {
+    font-size: 32px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.fa-regular.fa-pen-to-square:hover {
+    color: #FFC24F;
+}
+
+
+/* админка Удалить товар   */
+.txtBox__motion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete__txt {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.delete__product__name {
+    color: #818181;
+}
+
+@media (max-width: 430px) {
+    .delete__txt {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .delete__product__name {
+        font-size: 16px;
+    }
+}
+
+/* админка Добавить товар */
+.admin__title {
+    text-align: center;
+}
+
+.txtBox__motion form {
+    gap: 60px;
+}
+
+.txtBox__motion input {
+    text-align: center;
+    font-size: 24px;
+}
+
+.txtBox__motion form input,
+.txtBox__motion form input::placeholder {
+    font-size: 24px;
+}
+
+.download {
+    position: relative;
+    width: 100%;
+}
+
+.txtBox__motion form .download input {
+    border: 2px solid #ffffff;
+    height: 150px;
+    z-index: 1000;
+}
+
+.download__name {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.fa-regular.fa-circle-down {
+    font-size: 28px;
+}
+
+.txtBox__motion .date_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txtBox__motion .date_input label {
+    text-align: center;
+    padding: 0;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #C1C1C1;
+    font-size: 20px;
+    outline: none;
+}
+
+@media (max-width: 430px) {
+    .txtBox__motion form {
+        gap: 40px;
+    }
+    .txtBox__motion form input{
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .txtBox__motion form input,
+    .txtBox__motion form input::placeholder {
+        font-size: 16px;
+    }
+
+    .txtBox__motion form .download input {
+        border: 1px solid #ffffff;
+        height: 60px;
+        z-index: 1000;
+    }
+
+    .download__name {
+        font-size: 14px;
+    }
+
+    .fa-regular.fa-circle-down {
+        font-size: 16px;
+    }
+
+    textarea {
+        height: 60px;
+        font-size: 14px;
+    }
+}
+
+/* админка РЕдактирование товара */
+.admin__edit__product__id {
+    text-align: center;
+    color: #818181;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+@media (max-width: 430px) {
+    .admin__edit__product__id {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+}
+/* Адаптив для планшета */
 @media (max-width: 768px) {
     .mx_w {
         max-width: 680px;
@@ -1301,10 +2253,11 @@ form a span {
         font-size: 28px;
     }
 
-    .format{
+    .format {
         align-items: center;
     }
-    .format_items{
+
+    .format_items {
         align-items: center;
         justify-content: center;
     }
@@ -1420,7 +2373,7 @@ form a span {
         flex-direction: column;
         align-items: center;
         gap: 60px;
-        margin-top: 60px;
+        margin-top: 0px;
     }
 
     footer nav {
@@ -1507,7 +2460,7 @@ form a span {
         margin-top: 20px;
     }
 
-   
+
 
     .statistics .title h2 {
         width: 255px;
@@ -1517,39 +2470,50 @@ form a span {
         width: 90px;
         height: 90px;
     }
+
     .stat__items {
         width: 340px;
-        gap: 40px;   
+        gap: 40px;
     }
+
     .stat__card h3 {
         font-size: 36px;
     }
-    .stat__card p{
+
+    .stat__card p {
         font-size: 16px;
         width: 140px;
     }
+
     .stat__card p span {
         font-size: 22px;
     }
-    .format{
-        display: flex;flex-direction: column;
+
+    .format {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
-    .format h2{
+
+    .format h2 {
         width: 280px;
     }
+
     .format_items,
     .format__group2 {
         gap: 20px;
     }
+
     .format_card img {
         width: 360px;
     }
+
     .format_card p {
         font-size: 16px;
         right: 7px;
         bottom: 5px;
     }
+
     .format_card_one p {
         font-size: 18px;
     }
@@ -1557,77 +2521,94 @@ form a span {
     .card {
         width: 300px;
     }
+
     .card .imgBox img {
         width: 300px;
         height: 354px;
     }
+
     .card .imgBox .card__name .place img {
         width: 15px;
-        height: auto;   
+        height: auto;
     }
-    .card .imgBox .card__name .place h4{
+
+    .card .imgBox .card__name .place h4 {
         font-size: 24px;
     }
+
     .card .imgBox .name_tour {
         font-size: 18px;
         width: 275px;
     }
+
     .card__name {
         width: 300px;
         bottom: -47px;
         gap: 0;
     }
-    .txtBox{
+
+    .txtBox {
         margin-top: 15px;
         gap: 15px;
     }
+
     .txtBox .date {
         font-size: 18px;
     }
+
     .txtBox p {
         font-size: 15px;
         width: 280px;
         height: 114px;
     }
+
     .txtBox .price {
         font-size: 20px;
         padding-top: 5px;
     }
+
     .btn__card {
         font-size: 18px;
         padding: 10px 15px;
         margin-top: 20px;
     }
+
     .otzyv__card:nth-child(1) {
         display: none;
     }
+
     .otzyv__card {
         padding: 15px 15px 20px;
         border-radius: 10px;
     }
+
     .otzyv__card img {
         width: 280px;
         height: 280px;
     }
+
     .otzyv__card p {
         width: 280px;
         height: 95px;
         margin-top: 15px;
         font-size: 15px;
     }
+
     .otzyv__card h5 {
         font-size: 22px;
     }
+
     .btn__otzyv {
         padding: 7px 10px;
         font-size: 15px;
         margin-top: 20px;
     }
+
     .footer__txt {
         flex-direction: column;
         align-items: center;
         gap: 45px;
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     footer nav {
@@ -1635,82 +2616,101 @@ form a span {
         font-size: 16px;
         gap: 15px;
     }
+
     .footer__txt .contact_f {
         font-size: 16px;
     }
+
     .social {
         margin-top: 15px;
         gap: 30px;
     }
+
     .copiright {
         width: 364px;
         font-size: 14px;
         margin-top: 40px;
     }
+
     .banner_about {
         background: url(../img/fon_bg/about__mob.png);
     }
-    .about__info{
+
+    .about__info {
         align-items: center;
         gap: 10px;
     }
-    .txtBox__about{
+
+    .txtBox__about {
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
-    .txtBox__about .txtBlock{
+
+    .txtBox__about .txtBlock {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .txtBox__about .img1__about{
+    .txtBox__about .img1__about {
         display: block;
         width: 390px;
         height: 180px;
         margin: 0;
     }
+
     .txtBox__about .img2__about2 {
         display: none;
     }
-    .about__info .img2__about{
+
+    .about__info .img2__about {
         display: block;
         /* width: 280px; */
         width: 250px;
         height: 402px;
     }
-    .about__info .img1__about1{
+
+    .about__info .img1__about1 {
         display: none;
     }
+
     .txtBox__about p {
         font-size: 16px;
         width: 330px;
         text-align: center;
     }
+
     .block {
         width: 390px;
         gap: 10px;
     }
-    .osoben__card{
+
+    .osoben__card {
         width: 190px;
     }
+
     .osoben__card img {
         width: 190px;
         height: 250px;
     }
-    .osoben__card h4{
+
+    .osoben__card h4 {
         font-size: 22px;
     }
+
     .banner_catalog {
         background: url(../img/fon_bg/katalog__mob.png);
     }
-    .banner_catalog .btn{
+
+    .banner_catalog .btn {
         font-size: 16px;
     }
-    .tovar{
+
+    .tovar {
         padding-bottom: 0;
     }
+
     .filtr__items {
         width: 217px;
         flex-wrap: wrap;
@@ -1718,125 +2718,265 @@ form a span {
         gap: 10px;
         margin: 50px 0 25px;
     }
-    .filtr{
+
+    .filtr {
         padding: 4px 8px;
         font-size: 14px;
         width: 100px;
         flex: 1;
     }
-    .vse{
+
+    .vse {
         width: auto;
         text-align: center;
     }
+
     .pagination__katalog {
         gap: 20px;
         margin-top: 5px;
     }
+
     .banner_tovar h1 {
         font-size: 30px;
     }
-    
+
     .place__date {
         padding-top: 40px;
     }
+
     .place__date .place h4 {
         font-size: 18px;
     }
-    
+
     .place__date .place img {
         height: 20px;
         width: auto;
     }
-    .place__date .place{
+
+    .place__date .place {
         gap: 5px;
     }
+
     .place__date p {
         font-size: 20px;
     }
+
     .banner_tovar .banner {
         bottom: -20px;
     }
-    .tovar__info{
+
+    .tovar__info {
         gap: 30px;
     }
+
     .tovar__info .txtBox__tovar {
         width: 360px;
         font-size: 16px;
         text-align: center;
     }
+
     .tovar__info .txtBox__tovar .price {
         font-size: 22px;
         margin-top: 30px;
     }
+
     .tovar__info .tovar__two {
         display: block;
         max-width: 430px;
     }
+
     .btn__tovar {
         margin-top: 40px;
         padding: 7px 10px;
         font-size: 22px;
     }
+
     .banner__contact {
         height: 810px;
     }
+
     .banner__contact .banner {
         bottom: -350px;
     }
-    .contact__info{
+
+    .contact__info {
         gap: 25px;
     }
-    .banner__contact h2{
+
+    .banner__contact h2 {
         font-size: 30px;
     }
-    .contact__card{
+
+    .contact__card {
         gap: 8px;
     }
+
     .cont__name {
         font-size: 20px;
     }
-    .cnt{
+
+    .cnt {
         font-size: 22px;
     }
+
     .cont__social {
         margin-top: 25px;
     }
+
     .cont__social .social {
         gap: 10px;
     }
-    .cont__social .social a img{
+
+    .cont__social .social a img {
         width: 40px;
         height: 40px;
     }
-    .contact__info .copiright{
+
+    .contact__info .copiright {
         margin-top: 60px;
     }
+
     .form_login_registration {
         width: 360px;
         padding-top: 25px;
         padding-bottom: 40px;
         margin-top: 40px;
     }
-    .form_login_registration h2{
+
+    .form_login_registration h2 {
         font-size: 32px;
     }
+
     form {
         gap: 15px;
         width: 320px;
     }
+
     form input,
     form input::placeholder {
         font-size: 18px;
     }
+
     form a {
         font-size: 14px;
         text-align: center;
         margin-top: 15px;
     }
+
     .btn_form {
         font-size: 20px;
         padding: 10px 20px;
         border-radius: 10px;
         margin-top: 15px;
     }
+}
+
+/* #burger,
+[for=burger] {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    [for=burger] {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 10px;
+    }
+
+    [for=burger]::before {
+        content: '≡';
+        font-size: 25px;
+    }
+
+    header nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        width: 80%;
+        background-color: rgb(159, 159, 197);
+    }
+    #burger:checked + [for=burger] + header nav{
+        display: block;
+        animation: show .6s;
+    }
+    #burger:checked + [for=burger]::before{
+        content: '⊗';
+        font-size: 25px;
+    }
+
+    @keyframes show {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+} */
+.users__products__card p{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .prod__img__name {
+        width: 105px;
+    }
+    
+    .prod__img {
+        width: 102px;
+        height: 120px;
+        border-radius: 10px;
+    }
+
+    .prod__img img {
+        width: 100%;
+        height: 100%;
+    }
+    .prod__name{
+        width: 150px;
+    }
+    .prod__country{
+        width: 80px;
+    }
+    .prod__price{
+        width: 80px;
+    }
+    .btn__edit{
+        gap: 15px;
+    }
+    .users__products__card  .fa-solid.fa-trash{
+        font-size: 24px;
+    }
+    .fa-regular.fa-pen-to-square{
+        font-size: 26px;
+    }
+}
+@media (max-width: 430px) {
+    .prod__img {
+        width: 68px;
+        height: 80px;
+        border-radius: 10px;
+    }
+    .prod__img__name{
+        width: 64px;
+    }
+    .prod__name{
+        width: 90px;
+    }
+    .prod__country{
+        width: 45px;
+    }
+    .prod__price{
+        width: 60px;
+    }
+    .btn__edit{
+        gap: 7px;
+    }
+    .users__products__card  .fa-solid.fa-trash{
+        font-size: 14px;
+    }
+    .fa-regular.fa-pen-to-square{
+        font-size: 16px;
+    }
+
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Товар</title>
+    <title>Заказ</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/logo/fav1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -16,7 +16,6 @@
 <body>
     <header class="mx_w">
         <a href="index.html"><img src="assets/img/logo/logo_h.png" alt=""></a>
-
         <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
         <nav>
             <a href="index.html">Главная</a>
@@ -25,39 +24,58 @@
             <a href="contact.html">Контакты</a>
         </nav>
         <!-- <img src="assets/img/icon/Person.png" alt="" class="user"> -->
-        <a href="autorization.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>    </header>
+        <a href="autorization.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+    </header>
 
-    <div class="bg_banner banner_tovar">
-        <div class="banner mx_w">
-            <h1>Встреча с льдами и<br>дикой природой </h1>
-            <div class="place__date">
-                <div class="place">
-                    <img src="assets/img/icon/place.png" alt="">
-                    <h4>Антарктида</h4>
-                </div>
-                <p>4 февраля - 15 февраля</p>
+    <div class="form_order mx_w">
+        <h2><span>Путешествие мечты</span></h2>
+        <form method="POST" name="order_form">
+            <input type="text" name="country" placeholder="Страна">
+            <input type="text" name="name" placeholder="Название тура">
+            <div class="date_input">
+
+                <label for="date_otpr">Дата отправления</label>
+                <input type="date" id="date_otpr" name="date_otpr" placeholder="Дата отправления">
             </div>
-        </div>
-
-    </div>
-
-    <div class="tovar mx_w ptb">
-
-        <div class="tovar__info">
-            <div class="txtBox__tovar">
-                <p>Отправляйтесь в удивительное путешествие, где вас ждут встречи с величественными льдами и непокорной
-                    дикой природой Антарктики. Погрузитесь в мир ледников, проведите время с животными и насладитесь
-                    невероятной красотой этого уникального континента. Открыть для себя непроглядные обширные ледяные
-                    просторы и ощутить мощь и тишину этого удаленного уголка планеты - это приключение, которое навсегда
-                    останется в вашей памяти.</p>
-                <p class="price"><span>Цена: </span>от 1600 $</p>
+            <div class="date_input">
+                <label for="date_vozvr">Дата возвращения</label>
+                <input type="date" id="date_vozvr" name="date_vozvr" placeholder="Дата возвращения">
             </div>
-            <img src="assets/img/tovar/antarctida__one.png" alt="">
-            <img src="assets/img/tovar/antarctida__two.png" alt="" class="tovar__two">
-        </div>
-        <a href="#!" class="btn btn__tovar mx_w">НАЧАТЬ путешествие</a>
-    </div>
+            <input type="number" name="quantity" placeholder="Количество человек">
 
+            <input type="submit" class="btn__user" value="Оставить заявку" name="order_form">
+        </form>
+    </div>
+    <!--  -->
+    <!-- <div class="form_order mx_w">
+        <form method="POST" name="order_form">
+            <div class="input">
+                <label for="country">Страна</label>
+                <input type="text" name="country" id="country" placeholder="Страна">
+            </div>
+            <div class="input">
+                <label for="name">Название тура</label>
+                <input type="text" name="name" id="name" placeholder="Название тура">
+            </div>
+
+            <div class="input">
+                <label for="date_otpr">Дата отправления</label>
+                <input type="date" id="date_otpr" placeholder="Дата отправления">
+
+            </div>
+
+            <div class="input">
+                <label for="date_vozvr">Дата возвращения</label>
+                <input type="date" id="date_vozvr" placeholder="Дата возвращения">
+            </div>
+
+            <div class="input">
+                <label for="quantity">Количество человек</label>
+                <input type="text" id="quantity" placeholder="Количество человек">
+            </div>
+            <button type="button">Register</button>
+        </form>
+    </div> -->
 
     <footer class="mx_w ptb">
         <hr>
@@ -69,7 +87,6 @@
                 <a href="katalog.html">Путешествия</a>
                 <a href="contact.html">Контакты</a>
             </nav>
-
             <div class="contact_f">
                 <p>г. Казань, ул.Татарстан, д.10, офис 51</p>
                 <a href="mailto:aroundtheworld@info.ru">
@@ -88,6 +105,7 @@
         <p class="copiright">© Almi 2023 <br>Все права защищены. Используя сайт, вы принимаете условия соглашений.
             Информация на сайте не является публичной офертой.</p>
     </footer>
+
 </body>
 
 </html>
