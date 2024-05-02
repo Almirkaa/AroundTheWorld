@@ -2182,7 +2182,9 @@ textarea {
     nav {
         display: none;
     }
-
+    .user__icon{
+        display: none;
+    }
     .fa-solid.fa-user {
         display: none;
     }
