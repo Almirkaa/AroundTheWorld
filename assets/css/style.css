@@ -1512,26 +1512,26 @@ form a span {
     color: #FFC24F;
 }
 
-.form_order form input,
-.form_order form input::placeholder {
-    font-family: 'Unb';
-    font-weight: 500;
-    font-size: 32px;
-    color: #ffffff;
-}
+    .form_order form input,
+    .form_order form input::placeholder {
+        font-family: 'Unb';
+        font-weight: 500;
+        font-size: 32px;
+        color: #ffffff;
+    }
 
-.form_order form input {
-    background-color: transparent;
-    width: 100%;
-    padding-top: 14px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    outline: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid #ffffff;
-}
+    .form_order form input {
+        background-color: transparent;
+        width: 100%;
+        padding-top: 14px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #ffffff;
+    }
 
 .form_order form input:focus {
     color: #FFC24F;
